@@ -1,0 +1,8 @@
+﻿html, body {
+height: 100%;
+}
+
+body {
+	
+	background: linear-gradient(to bottom, rgb(128, 128, 128),rgb(255, 255, 255)) no-repeat;
+}
