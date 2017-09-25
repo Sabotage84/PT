@@ -1,8 +1,19 @@
-﻿html, body {
+﻿/*html, body {
 height: 100%;
-}
+}*/
 
 body {
-	
+	padding-left:3%;
+    padding-right:3%;
 	background: linear-gradient(to bottom, rgb(170, 170, 170),rgb(230, 230, 230)) no-repeat;
 }
+
+#slider {
+    position: relative;
+}
+
+    #slider img {
+        width: 100%;
+        display: block;
+    }
+
