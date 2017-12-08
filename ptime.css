@@ -20,12 +20,27 @@ body {
 
 .NavMenu{
     margin-bottom: 10px;
-    margin-right:30px;
-    background-color: #36a4b7;
+    /*margin-right: 15px;*/
+    /*margin-right:30px;*/
+    background-color: rgb(255, 255, 255);
 }
 
 .NavMenu:hover{
     background-color:red;
+}
+
+.MainTopic
+{
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border: 1px solid blue;
+    padding: 3px;
+
+}
+
+.row{
+    margin-left:0px;
+    margin-right:0px;
 }
 
 /*.testTable div:nth-child(odd) {
