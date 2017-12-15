@@ -1,19 +1,31 @@
 ﻿html, body {
-height: 100%;
+height: auto;
 }
 
 body {
 	padding-left:3%;
     padding-right:3%;
     padding-top:1%;
-	background: linear-gradient(to bottom, rgb(170, 170, 170),rgb(230, 230, 230)) no-repeat;
+	background: linear-gradient(to bottom, rgb(99, 91, 91),rgb(170, 170, 170)) no-repeat;
 }
 
 #slider {
     position: relative;
 }
 
-    #slider img {
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#slider img {
         width: 100%;
         display: block;
     }
@@ -41,6 +53,17 @@ body {
 .row{
     margin-left:0px;
     margin-right:0px;
+}
+
+.headline2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF0033;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-style: normal;
+    font-weight: bold;
+    background-attachment: fixed;
 }
 
 /*.testTable div:nth-child(odd) {
