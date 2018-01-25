@@ -21,6 +21,15 @@
 
         });
     </script>
+
+    <script>
+         $(function () {
+             $(".NavMenu").click(function () {
+                 window.location.href = $(this).children('a').attr('href');
+                 
+             });
+         });
+    </script>
     
 </head>
 <body>
@@ -60,13 +69,28 @@
 
         <div class="row" style="background-color:white" >
             <div class="col-lg-4" >
-                <div class="NavMenu">Серверы точного времени</div>
-                <div class="NavMenu">Спутниковые приемники</div>
-                <div class="NavMenu">Системы часофикации</div>
-                <div class="NavMenu">Дополнительное оборудование и аксессуары</div>
-                <div class="NavMenu">Документация на оборудование</div>
-                <div class="NavMenu">Наши заказчики</div>
+                <div class="NavMenu"><a href="https://www.youtube.com/">Серверы точного времени</a></div>
+                <div class="NavMenu"><a href="https://yandex.ru/">Спутниковые приемники</a></div>
+                <div class="NavMenu"><a href="https://market.yandex.ru/">Системы часофикации</a></div>
+                <div class="NavMenu"><a href="index.html">Дополнительное оборудование и аксессуары</a></div>
+                <div class="NavMenu"><a href="https://vk.com">Документация на оборудование</a></div>
+                <div class="NavMenu"><a href="https://www.google.ru">Наши заказчики</a></div>
+                <div class="leftSlider"><strong>Чувство такта в сетях электросвязи</strong><br> 
+                                    Синхронизация базовых станций сотовых сетей связи, систем цифрового 
+                                    телевидения и радиовещания, спутникового оборудования. Источники 
+                                    тактовых сигналов Подробнее...<br><br>
+                                    <strong>Электронный город</strong> <br />
+                                    Решения на основе серверов Метроном в рамках реализации программ: 
+                                    "Информационный город", "Электронная Москва", "Безопасный город" Подробнее...
+                </div>
+                <div style="margin:10px">
+                    Наши серверы используются в
+                    ФГУП «Всероссийский научно-исследовательский
+                    институт физико-технических и радиотехнических
+                    измерений»
+                </div>
             </div>
+            
             <div class="col-lg-8" style="background-color:white; height:100%">
                 <div class="MainTopic">
                     <h2 class="headline2"> Mетроном-1000 и Метроном-3000 - мультиформатная модульная платформа.</h2>
@@ -117,10 +141,13 @@
             </div>
         </div>
 
-        <div class="row row-eq-height">
-            <div class="col-lg-6" style="background-color:white">
+        <div class="row row-eq-height" style="padding-top:20px; background-color:white">
+            <div class="col-lg-4" style="background-color:white; vertical-align:central">
                 <img src="images/ptime_barcode.gif" /></div>
-            <div class="col-lg-6" style="background-color:white; text-align:right">
+            <div class="col-lg-4" style="background-color:white; vertical-align:central; text-align:center">
+                <span><a href="index.html">карта проезда</a> | <a href="index.html">точное время </a>|<a href="index.html"> о компании</a></span>
+            </div>
+            <div class="col-lg-4" style="background-color:white; text-align:right">
                 ООО "Прайм Тайм"<br>
                 127322, Москва, ул. Яблочкова д.21, корп. 3, 3 этаж<br>
                 Телефон/Факс: +7(495) 616-10-00
