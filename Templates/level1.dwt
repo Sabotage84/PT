@@ -1,13 +1,13 @@
-<!doctype html>
-<html><!-- InstanceBegin template="/Templates/level1.dwt" codeOutsideHTMLIsLocked="false" -->
+﻿<!doctype html>
+<html>
 
 <head>
 <meta charset="utf-8">
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Документ без названия</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 <link href="../ptime.css" rel="stylesheet" />
     <script src="../Scripts/jquery-1.9.1.min.js"></script>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
              });
          });
     </script>
-<!-- InstanceBeginEditable name="Scripts" -->Editregion <!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="Scripts" -->Editregion <!-- TemplateEndEditable -->
 
 </head>
 
@@ -60,11 +60,11 @@
                 <div class="NavMenu"><a href="https://vk.com">Документация на оборудование</a></div>
                 <div class="NavMenu"><a href="https://www.google.ru">Наши заказчики</a></div>
                 <hr>
-                 <!-- InstanceBeginEditable name="LeftSlider" -->Editregion <!-- InstanceEndEditable -->
+                 <!-- TemplateBeginEditable name="LeftSlider" -->Editregion <!-- TemplateEndEditable -->
             </div>
             
             <div class="col-lg-8" style="background-color:white; height:100%; border:dotted 1px #B1B0B0">
-                <!-- InstanceBeginEditable name="MainTopic" -->Editregion <!-- InstanceEndEditable -->
+                <!-- TemplateBeginEditable name="MainTopic" -->Editregion <!-- TemplateEndEditable -->
 
             </div>
         </div>
@@ -89,4 +89,4 @@
 	
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

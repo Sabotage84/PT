@@ -1,0 +1,394 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/level3_servers.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Документ без названия</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="ptime.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    
+    <script>
+         $(function () {
+             $(".NavMenu").click(function () {
+                 window.location.href = $(this).children('a').attr('href');
+                 
+             });
+         });
+    </script>
+<!-- InstanceBeginEditable name="Scripts" -->
+<link rel="stylesheet" type="text/css" href="gallery/gallery_styles.css">
+
+<script src="Scripts/jquery-3.2.1.min.js"></script>
+<link href="Scripts/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+<script src="Scripts/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script>
+        $(function () {
+            $("#tabs").tabs();
+        } );
+    </script>
+    
+ <script>
+$(function(){
+  $('.thumbnails a').click(function(){                                 // При нажатиина миниатюру
+    var images = $(this).find('img');
+    var imgSrc = images.attr('src');
+ 
+    $(".big-image img").attr({ src: imgSrc });                         // Подменяем адрес большого изображения на адрес выбранного
+    $(this).siblings('a').removeClass('active');                       // Удаляем класс .active со ссылки чтоб убрать рамку
+    images.parent().addClass('active');                                // Добавляем класс .active на выбранную миниатюру
+    return false;
+  });
+ 
+  $('.next').click(function(){                                         // При нажатии на кнопку "вперед"
+    var count = $('.thumbnails a').length;                             // Общее количество изображений
+    var n = parseInt($('.thumbnails a').index($('.active')) + 1);      // Порядковый номер текущего изображения
+    var activeImg = $('.thumbnails .active');                          // Активное на данный момент изображение
+    var nextSrc;
+ 
+    if (count != n){                                                   // - Если изображение не последнее
+      nextSrc = activeImg.next().find('img').attr('src');              // В переменную записывается адрес следующего изображения
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active с предыдущей миниатюры
+      activeImg.next().addClass('active');                             // На миниатюру следующего изображения вешается класс .active
+    }else{                                                             // - Если текущее изображение последнее в списке
+      nextSrc = $('.thumbnails a').first().find('img').attr('src');    // В переменную записывается адрес первого изображения
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active с предыдущей миниатюры
+      $('.thumbnails a').first().addClass('active');                   // На первую миниатюру вешается класс .active
+    }
+    $('.big-image img').attr({ src: nextSrc });                        // Подменяем адрес большого изображения на адрес следующего
+    return false;
+  });
+ 
+ 
+  $('.prev').click(function(){                                         // При нажатии на кнопку "назад"
+    var count = $('.thumbnails a').length;                             // Общее количество изображений
+    var n = parseInt($('.thumbnails a').index($('.active')) + 1);      // Порядковый номер текущего изображения
+    var activeImg = $('.thumbnails .active');                          // Активное на данный момент изображение
+    var prevSrc;
+ 
+    if (n != 1){                                                       // - Если текущее изображение не первое
+      prevSrc = activeImg.prev().find('img').attr('src');              // В переменную записывается адрес предыдущего изображения           
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active активной до этого миниатюры
+      activeImg.prev().addClass('active');                             // На миниатюру изображения слева вешается класс .active
+    }else{                                                             // - Если текущее изображение первое
+      prevSrc = $('.thumbnails a:last').find('img').attr('src');       // В переменную записывается адрес последнего изображения
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active с предыдущей миниатюры
+      $('.thumbnails a:last').addClass('active');                      // На последнюю миниатюру вешается класс .active
+    }
+    $('.big-image img').attr({ src: prevSrc });                        // Подменяется адрес большого изображения на адрес следующего
+    return false;
+  });
+})
+</script>   
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body>
+	 <div class="center-block" style="background-color:white; padding:0px; max-width:1200px">
+
+        <div class="row" style="background-color:white; padding:0px">
+
+            <div class="col-lg-12">
+                <a href="index.html"><img src="images/sm_logo.gif" class="pull-left"></a>
+                <img src="images/mail_phone.png" class="pull-right" />
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" style="background-color:aliceblue; padding:0px">
+             
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 separ" >
+                <br>
+            </div>
+        </div>
+
+        <div class="row" style="background-color:white; padding-top:10px" >
+            <div class="col-lg-4" >
+                <div class="NavMenu"><a href="https://www.youtube.com/">Серверы точного времени</a></div>
+                <div class="NavMenu"><a href="https://yandex.ru/">Спутниковые приемники</a></div>
+                <div class="NavMenu"><a href="https://market.yandex.ru/">Системы часофикации</a></div>
+                <div class="NavMenu"><a href="index.html">Дополнительное оборудование и аксессуары</a></div>
+                <div class="NavMenu"><a href="https://vk.com">Документация на оборудование</a></div>
+                <div class="NavMenu"><a href="https://www.google.ru">Наши заказчики</a></div>
+                <hr>
+                 <!-- InstanceBeginEditable name="LeftSlider" -->Editregion <!-- InstanceEndEditable -->
+            </div>
+            
+            <div class="col-lg-8" style="background-color:white; height:100%; border:dotted 1px #B1B0B0">
+                 
+                <!-- InstanceBeginEditable name="Description" -->Server name
+                <a href="images/M300/m300-standard-conf.jpg" class="active"><img src="images/M300/m300-standard-conf.jpg" alt="first"></a>
+                <a href="images/M300/m300_phys-dimensions.jpg"><img src="images/M300/m300_phys-dimensions.jpg" alt="image12"></a>
+                <a href="images/M300/m300gps_com-rs232_pp.jpg"><img src="images/M300/m300gps_com-rs232_pp.jpg" alt="image13"></a>
+                <a href="images/M300/m300gps_tc-rs4_pp.jpg"><img src="images/M300/m300gps_tc-rs4_pp.jpg" alt="image14"></a>
+                <a href="images/M300/ntp-server-m300-gps_3.jpg"><img src="images/M300/ntp-server-m300-gps_3.jpg" alt="image15"></a>
+              Server discription<!-- InstanceEndEditable -->
+                <div id="tabs" style="background-color:white; height:100%; border:dotted 1px #B1B0B0; padding-left:0px; padding-right:0px">
+                <ul style="background-color:white; border:none; border-bottom:1px solid rgba(128,119,119,1.00); margin-left:0px;margin-right:0px; border-bottom-right-radius: 0px; 				border-bottom-left-radius: 0px">
+                    <li ><a href="#tabs-1">Основные параметры</a></li>
+                    <li ><a href="#tabs-2">Доп. параметры</a></li>
+                    <li ><a href="#tabs-3">Параметры антенны</a></li>
+                    <li ><a href="#tabs-4">Код заказа и опции</a></li>
+                    <li ><a href="#tabs-5">Аксессуары</a></li>
+                </ul>
+
+                <div id="tabs-1">
+                     <!-- InstanceBeginEditable name="MainProperty" -->
+                     <tr>
+              <td colspan="2" valign="top" ><p>Основные параметры. </p>                </td>
+              </tr>
+            <tr>
+              <td width="41%" valign="top" ><p >Встроенный приемник:</p></td>
+              <td width="59%" valign="top" ><p >ГЛОНАСС/GPS, 32 канала слежения<br>
+Опция: только GPS приемник.
+ </p></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p >Выбор режима приёма:</p></td>
+              <td valign="top" ><p>ГЛОНАСС/GPS, ГЛОНАСС, GPS</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p >Сетевой интерфейс:</p></td>
+              <td valign="top" ><p>2 x NTP LAN Ethernet  10/100 Мбит, RJ45;<br>
+			  Опции:<br>
+			  4/6 x NTP LAN Ethernet  10/100 Мбит, RJ45;<br>
+			  1 x NTP LAN Ethernet  10/100/1000 Мбит, RJ45;<br>
+			  3 x NTP LAN Ethernet  10/100/1000 Мбит, RJ45;</p></td>
+            </tr>
+            <tr >
+              <td valign="top" >Частотные выходы:</td>
+              <td valign="top" >10 МГц (TTL), 50 Ом, BNC;<br>
+Дополнительные параметры 10 МГц смотрите <a href="../../oscillators.html">здесь</a><br>
+Опция: 10 МГц (cинус) 1.2Vpp, 50 Ом, BNC;</td>
+            </tr>
+            <tr >
+              <td valign="top" >Импульсные выходы:</td>
+              <td valign="top" >1PPS (TTL), 50 Ом, BNC;<br>
+Дополнительные параметры 1PPS смотрите здесь</td>
+            </tr>
+            <tr >
+              <td valign="top" >Входной разъём для антенного кабеля:</td>
+              <td valign="top" >SMA<br>
+Опция: BNC для GPS.</td>
+            </tr>
+            <tr >
+              <td valign="top" <p c>Внутренний генератор:</p></td>
+              <td valign="top" ><p>TCXO <br>
+              Опции: OCXO-LQ, -MQ, -HQ, -DHQ. <br>Параметры смотрите здесь.</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Электропитание:</p></td>
+              <td valign="top" ><p>~100-240В<br>
+Опции: ~100-240В/=100-240B; 36-72B; 19-36B; 9-18В
+</p></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p>Потребляемая мощность: </p></td>
+              <td valign="top" ><p>40 Вт</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Рабочая температура:</p></td>
+              <td valign="top" ><p>0 ... 50°C </p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Влажность:</p></td>
+              <td valign="top" ><p>Максимум. 85%</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Габариты:</p></td>
+              <td valign="top" ><p>443 x 45 x 288 мм.</p></td>
+            </tr>
+            <tr >
+              <td colspan="2" valign="top" ><p>&nbsp;</p></td>
+              </tr> <!-- InstanceEndEditable -->
+                     </div>
+                <div id="tabs-2">
+                    <!-- InstanceBeginEditable name="ExtProperty" -->
+                    <tr >
+              <td valign="top" ><p>ЖК-дисплей:</p></td>
+              <td valign="top" ><p>LC-дисплей, 2 x 40 точек, с подсветкой</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Элементы управления:</p></td>
+              <td valign="top" ><p>8 кнопок для установок основных параметров</p></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p>LED-индикация:</p></td>
+              <td valign="top" ><p>4 двухцветных  светодиода LED:<br>
+              Синхронизация / Работа /  Сеть / Авария </p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Порт USB:</p></td>
+              <td valign="top" >1x USB:<br>
+                  <ul id="table_use">
+                <li>для обновления ПО;</li>
+                <li>бэкап и восстановление конфигурационных файлов;</li>
+                <li>для копирования ключей безопасности;</li>
+                <li>блокирования / разблок. клавиш управления на  лицевой панели.</li>
+                </ul></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p>Встроенный компьютер:</p></td>
+              <td valign="top"><p>i386 compatible 500Mhz CPU, 128 MB RAM</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Производительность (S)NTP:</p></td>
+              <td valign="top" ><p>Обработка 10000 запросов в секунду.</p></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p>Операционная система:</p></td>
+              <td valign="top" ><p>Linux with nano kernel (incl. PPSkit)</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Network Time Protocol (NTP):</p></td>
+              <td valign="top" ><p>NTP v2 (RFC 1119), NTP v3 (RFC 1305), NTP v4 (RFC5905) 
+SNTP v3 (RFC 1769), SNTP v4 (RFC 4330) 
+MD5 Authentication and Autokey Key Management</p></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p>Точность NTP</p></td>
+              <td valign="top" ><p>0.2 мс (LAN) / 10 мс (WAN)</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Сетевые протоколы OSI Layer 4  (transport layer):</p></td>
+              <td valign="top" ><p>TCP, UDP</p></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p>Сетевые протоколы OSI Layer 7  (application layer): </p></td>
+              <td valign="top" ><p>TELNET, FTP, SSH (incl. SFTP, SCP), HTTP, HTTPS,  SYSLOG, SNMP</p></td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Internet Protocol (IP):</p></td>
+              <td valign="top" ><p>IP v4, IP v6</p></td>
+            </tr>
+            <tr >
+              <td valign="top" ><p>Поддержка автоконфигурации сетевых установок:</p></td>
+              <td valign="top" ><p>IPv4: Dynamic Host Configuration Protocol - DHCP  (RFC 2131)<br>
+IPv6: Autoconfiguration Networking - AUTOCONF</p></td>
+            </tr>
+            <tr>
+              <td valign="top" >Интерфейс:</td>
+              <td valign="top" >2 х RS232</td>
+            </tr>
+            <tr>
+              <td valign="top">Формат данных через интерфейсы:</td>
+              <td valign="top" >Скорость: 300, 600, 1200, 2400, 4800, 9600, 19200<br>
+Формат данных: 7N2, 7E1, 7E2, 7O1, 8E1, 8N1, 8О1.<br> 
+Временная телеграмма: Meinberg Standard-Telegram, SAT, Uni Erlangen (NTP), SPA, RACAL, Sysplex, NMEA0183 (RMC, GGA, ZDA), Meinberg GPS, COMPUTIME, ION oder Capture-Telegramm</td>
+            </tr>
+            <tr>
+              <td valign="top" >Поддерживаемые форматы Time String:</td>
+              <td valign="top" >Meinberg Standard Timestring, Uni Erlangen  Timestring, SYSPLEX Timer, NMEA, Computime, ABB-SPA, SAT</td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>Time Protocol (TIME):</p></td>
+              <td valign="top" ><p>Time Protocol (RFC 868)</p></td>
+            </tr>
+            
+            <tr >
+              <td valign="top" ><p>Daytime Protocol (DAYTIME):</p></td>
+              <td valign="top" ><p>Daytime Protocol (RFC 867)</p></td>
+            </tr>
+            <tr>
+              <td valign="top" >Немодулированный сигнал IRIG:</td>
+              <td valign="top" >Опция: TTL (DCLS), 50 Ом, BNC</td>
+            </tr>
+            <tr>
+              <td valign="top" >Модулированный выход IRIG:</td>
+              <td valign="top" >Опция: Синусоида IRIG AM: 3Vpp (MARK), 1Vpp (SPACE), 50 Ом, BNC</td>
+            </tr>
+            <tr>
+              <td valign="top" >Генерация временных кодов:</td>
+              <td valign="top">Опция:<br>
+IRIG B002: 100pps, DCLS, без несущей, BCD time of year;<br>
+IRIG B122: 100pps, AM синусоида, несущая 1 кГц, BCD time of year;<br>
+IRIG B003: 100pps, DCLS, без несущей, BCD time of year, SBS time of day;<br>
+IRIG B123: 100pps, AM синусоида, несущая 1кГц, BCD time of year, SBS time of day;<br>
+IEEE1344: Кодирование согласно IEEE1344-1995, 100pps, AM-модулированная синусоида, несущая 1 кГц, BCD time of year, SBS time of day, IEEE1344 expansion for date, time zone, daylight saving and leap second in Control Funktions Segment<br>
+AFNOR кодирование согласно NFS-87500, 100pps, AM-модулированная синусоида, несущая 1 кГц, BCD time of year, complete date, SBS time of day</td>
+            </tr>
+            <tr>
+              <td valign="top" ><p>IEC 61850:</p></td>
+              <td valign="top" ><p>Synchronization of IEC 61850 compliant devices  by using SNTP</p></td>
+            </tr>
+            <tr>
+              <td valign="top" >Hypertext Transfer Protocol (HTTP):</td>
+              <td valign="top" >HTTP/HTTPS (RC 2616)</td>
+            </tr>
+            <tr>
+              <td valign="top" >Secure Shell (SSH):</td>
+              <td valign="top" >SSH v1.3, SSH v1.5, SSH v2 (OpenSSH)</td>
+            </tr>
+            <tr>
+              <td valign="top" >Telnet:</td>
+              <td valign="top" >Telnet (RFC 854-RFC 861)</td>
+            </tr>
+            <tr>
+              <td valign="top" >Обновление внутреннего ПО:</td>
+              <td valign="top" >Обновление может быть выполнено самим  пользователем локально, либо дистанционно через Ethernet-соединение. Бесплатное  пожизненное обновление программных версий продукта.</td>
+            </tr>
+            <tr>
+              <td valign="top" >Наработка на отказ:</td>
+              <td valign="top" >MTBF Более 100&nbsp;000 ч.</td>
+            </tr>
+            <tr>
+              <td valign="top" >Сертификат:</td>
+              <td valign="top" >ГОСТ-Р</td>
+            </tr>
+            <tr>
+              <td valign="top" >Стандартная гарантия: </td>
+              <td valign="top" ><p>3 года.</p></td>
+            </tr>
+            <tr> <!-- InstanceEndEditable -->
+                     </div>
+                <div id="tabs-3">
+                    <!-- InstanceBeginEditable name="AntennaProperty" -->Edit region <!-- InstanceEndEditable -->
+                     </div>
+                 <div id="tabs-4">
+				<!-- InstanceBeginEditable name="OrderSample" -->Editregion <!-- InstanceEndEditable -->
+                 </div>
+                <div id="tabs-5">
+				<!-- InstanceBeginEditable name="Accessoerity" --><!-- InstanceEndEditable -->
+                 </div>
+				</div>
+            </div>
+        </div>
+		
+
+            </div>
+        </div>
+		
+        <div class="row row-eq-height" style="padding-top:20px; background-color:white">
+
+            <div class="col-lg-4" style="background-color:white; vertical-align:central">
+                <img src="images/ptime_barcode.gif" /></div>
+            <div class="col-lg-4" style="background-color:white; vertical-align:central; text-align:center">
+                <span><a href="contacts.html">карта проезда</a> | <a href="index.html">точное время </a>|<a href="index.html"> о компании</a></span>
+            </div>
+            <div class="col-lg-4" style="background-color:white; text-align:right">
+                <div class="pull-right">
+                    ООО "Прайм Тайм"<br>
+                    127322, Москва, ул. Яблочкова д.21, корп. 3, 3 этаж<br>
+                    Телефон/Факс: +7(495) 616-10-00
+                </div>
+            </div>
+        </div>
+    
+    </div>
+	
+
+</body>
+<!-- InstanceEnd --></html>

@@ -9,6 +9,9 @@ body {
 	background: linear-gradient(to bottom, rgb(99, 91, 91),rgb(170, 170, 170)) no-repeat;
 }
 
+.separ{
+	background: linear-gradient(to top, rgba(210,210,210,1) , rgba(255,255,255,1.00)) no-repeat;
+}
 #slider {
     position: relative;
 }
@@ -69,14 +72,32 @@ body {
     padding-right: 5px;
     font-style: normal;
     font-weight: bold;
+	
     background-attachment: fixed;
 }
 
-/*.testTable div:nth-child(odd) {
-    
-}*/
+.headLine3{
+	font-family: Arial, Helvetica, sans-serif;
+    color: #FF0033;
+    font-size: 14px;
+	font-style: normal;
+	margin-top:25px;
+    font-weight: bold;
+	background: linear-gradient(to left, rgba(210,210,210,1.00), rgba(255,255,255,1.00)) no-repeat;
+	background-attachment: fixed;
+}
 
-    /*.testTable div:nth-child(odd):hover {
-        background-color: red;
-    }*/
+.story {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #006699;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+	list-style-position: outside;
+	list-style-type: square;
+	text-align: left;
+}
 
+.stripedTable tr:nth-child(odd) {
+      background-color: #E4E4E4;
+}
