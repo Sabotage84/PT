@@ -50,7 +50,7 @@
 
         <div class="row" style="background-color:white; padding-top:10px" >
             <div class="col-lg-4" >
-                <div class="NavMenu"><a href="../servsrs.html">Серверы точного времени</a></div>
+                <div class="NavMenu"><a href="../servsrs.html">Серверы точного времени </a></div>
                 <div class="NavMenu"><a href="https://yandex.ru/">Спутниковые приемники</a></div>
                 <div class="NavMenu"><a href="https://yandex.ru/">Размножители и конверторы</a></div>
                 <div class="NavMenu"><a href="index.html">Дополнительное оборудование и аксессуары</a></div>
@@ -72,7 +72,7 @@
             <div class="col-lg-4" style="background-color:white; vertical-align:central">
                 <img src="../images/ptime_barcode.gif" /></div>
             <div class="col-lg-4" style="background-color:white; vertical-align:central; text-align:center">
-                <span><a href="contacts.html">карта проезда</a> | <a href="index.html">точное время </a>|<a href="index.html"> о компании</a></span>
+                <span><a href="../contacts.html">карта проезда</a> | <a href="../index.html">точное время </a>|<a href="../index.html"> о компании</a></span>
             </div>
             <div class="col-lg-4" style="background-color:white; text-align:right">
                 <div class="pull-right">
