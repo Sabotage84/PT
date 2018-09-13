@@ -171,74 +171,31 @@ $(function(){
                      </div>
                 <div id="tabs-3">
                     <!-- InstanceBeginEditable name="AntennaProperty" --> 
+                    @@("")@@
 					<table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             <tr>
-              <td colspan="2" valign="top"  class="story"><p class="story">Основные параметры. </p>                </td>
-              </tr>
-            <tr>
-              <td width="41%" valign="top"  class="story"><p class="story">Встроенный приемник:</p></td>
-              <td width="59%" valign="top"  class="story"><p class="story">ГЛОНАСС/GPS, 32 канала слежения<br>
-Опция: только GPS приемник.
- </p></td>
-            </tr>
-            <tr >
-              <td valign="top"  class="story"><p class="story">Выбор режима приёма:</p></td>
-              <td valign="top"  class="story"><p>ГЛОНАСС/GPS, ГЛОНАСС, GPS</p></td>
+              <td valign="top" class="story">Антенна: </td>
+              <td valign="top" class="story">Наружная антенна ГЛОНАСС/GPS с встроенным грозоразрядником.<br>
+Подробнее смотрите здесь.</td>
             </tr>
             <tr>
-              <td valign="top" class="story"><p class="story">Сетевой интерфейс:</p></td>
-              <td valign="top" class="story"><p>2 x NTP LAN Ethernet  10/100 Мбит, RJ45;<br>
-			  Опции:<br>
-			  4/6 x NTP LAN Ethernet  10/100 Мбит, RJ45;<br>
-			  1 x NTP LAN Ethernet  10/100/1000 Мбит, RJ45;<br>
-			  3 x NTP LAN Ethernet  10/100/1000 Мбит, RJ45;</p></td>
+              <td valign="top" class="story">Тип спутниковой системы:</td>
+              <td valign="top" class="story">ГЛОНАСС/GPS/GALILEO</td>
             </tr>
             <tr>
-              <td valign="top"  class="story">Частотные выходы:</td>
-              <td valign="top"  class="story">10 МГц (TTL), 50 Ом, BNC;<br>
-Дополнительные параметры 10 МГц смотрите <a href="../../oscillators.html">здесь</a><br>
-Опция: 10 МГц (cинус) 1.2Vpp, 50 Ом, BNC;</td>
+              <td valign="top" class="story">Частотный диапазон, усиление,  сопротивление:</td>
+              <td valign="top" class="story">1575,42 ± 10 MГц : &gt;=3,5dBic; 1602-1615 MГц: &gt;=3дБ; 50 Ом</td>
             </tr>
             <tr>
-              <td valign="top"  class="story">Импульсные выходы:</td>
-              <td valign="top"  class="story">1PPS (TTL), 50 Ом, BNC;<br>
-Дополнительные параметры 1PPS смотрите <a href="../../oscillators.html">здесь</a></td>
+              <td valign="top" class="story">Параметры конструкции:</td>
+              <td valign="top" class="story">184х81мм, 0,34кг.</td>
             </tr>
             <tr>
-              <td valign="top"  class="story">Входной разъём для антенного кабеля:</td>
-              <td valign="top"  class="story">SMA<br>
-Опция: BNC для GPS.</td>
+              <td valign="top" class="story">Рабочая температура:</td>
+              <td valign="top"  class="story">-40 ... +85°C<br>
+Опция: Наружная антенна ГЛОНАСС/GPS (-70°C до +85°C). <br>
+Подробнее смотрите здесь.</td>
             </tr>
-            <tr >
-              <td valign="top" class="story"><p class="story">Внутренний генератор:</p></td>
-              <td valign="top" class="story"><p>TCXO <br>
-              Опции: OCXO-LQ, -MQ, -HQ, -DHQ. <br>Параметры смотрите<a href="../../oscillators.html"> здесь</a>.</p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Электропитание:</p></td>
-              <td valign="top" class="story"><p>~100-240В<br>
-Опции: ~100-240В/=100-240B; 36-72B; 19-36B; 9-18В
-</p></td>
-            </tr>
-            <tr >
-              <td valign="top" class="story"><p>Потребляемая мощность: </p></td>
-              <td valign="top" class="story"><p>40 Вт</p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Рабочая температура:</p></td>
-              <td valign="top" class="story"><p>0 ... 50°C </p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Влажность:</p></td>
-              <td valign="top" class="story"><p>Максимум. 85%</p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Габариты:</p></td>
-              <td valign="top" class="story"><p>443 x 45 x 288 мм.</p></td>
-            </tr>
-            <tr >
-              <td colspan="2" valign="top" class="story"><p>&nbsp;</p></td>
-              </tr>
               </table>
 					<!-- InstanceEndEditable -->
                      </div>
@@ -247,75 +204,36 @@ $(function(){
                  </div>
                 <div id="tabs-5">
 				<!-- InstanceBeginEditable name="Accessoerity" --> 
+                @@("")@@
+              
 				<table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             <tr>
-              <td colspan="2" valign="top"  class="story"><p class="story">Основные параметры. </p>                </td>
-              </tr>
-            <tr>
-              <td width="41%" valign="top"  class="story"><p class="story">Встроенный приемник:</p></td>
-              <td width="59%" valign="top"  class="story"><p class="story">ГЛОНАСС/GPS, 32 канала слежения<br>
-Опция: только GPS приемник.
- </p></td>
-            </tr>
-            <tr >
-              <td valign="top"  class="story"><p class="story">Выбор режима приёма:</p></td>
-              <td valign="top"  class="story"><p>ГЛОНАСС/GPS, ГЛОНАСС, GPS</p></td>
+              <td valign="top" class="story">РК50-3-35</td>
+              <td valign="top" class="story">Антенный кабель для  ГЛОНАСС/GPS 50м.</td>
             </tr>
             <tr>
-              <td valign="top" class="story"><p class="story">Сетевой интерфейс:</p></td>
-              <td valign="top" class="story"><p>2 x NTP LAN Ethernet  10/100 Мбит, RJ45;<br>
-			  Опции:<br>
-			  4/6 x NTP LAN Ethernet  10/100 Мбит, RJ45;<br>
-			  1 x NTP LAN Ethernet  10/100/1000 Мбит, RJ45;<br>
-			  3 x NTP LAN Ethernet  10/100/1000 Мбит, RJ45;</p></td>
+              <td valign="top"  class="story">РК50-7-311</td>
+              <td valign="top"  class="story">Антенный кабель для  ГЛОНАСС/GPS 50м/100/150м<br>
+                (-70&deg;C до +85&deg;C).</td>
             </tr>
             <tr>
-              <td valign="top"  class="story">Частотные выходы:</td>
-              <td valign="top"  class="story">10 МГц (TTL), 50 Ом, BNC;<br>
-Дополнительные параметры 10 МГц смотрите <a href="../../oscillators.html">здесь</a><br>
-Опция: 10 МГц (cинус) 1.2Vpp, 50 Ом, BNC;</td>
+              <td valign="top" class="story">РК50-3-35 </td>
+              <td valign="top" class="story">Антенный кабель для GPS 50м./100м./150м./200м./300м.</td>
             </tr>
             <tr>
-              <td valign="top"  class="story">Импульсные выходы:</td>
-              <td valign="top"  class="story">1PPS (TTL), 50 Ом, BNC;<br>
-Дополнительные параметры 1PPS смотрите <a href="../../oscillators.html">здесь</a></td>
+              <td valign="top"  class="story"> N-722Q</td>
+              <td valign="top"  class="story">Грозоразрядник для  антенны GPS.</td>
             </tr>
             <tr>
-              <td valign="top"  class="story">Входной разъём для антенного кабеля:</td>
-              <td valign="top"  class="story">SMA<br>
-Опция: BNC для GPS.</td>
-            </tr>
-            <tr >
-              <td valign="top" class="story"><p class="story">Внутренний генератор:</p></td>
-              <td valign="top" class="story"><p>TCXO <br>
-              Опции: OCXO-LQ, -MQ, -HQ, -DHQ. <br>Параметры смотрите<a href="../../oscillators.html"> здесь</a>.</p></td>
+              <td valign="top" class="story">GPSGL-TMG-SPI-40NCB</td>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS (-40°C до +85°C).</td>
             </tr>
             <tr>
-              <td valign="top" class="story"><p>Электропитание:</p></td>
-              <td valign="top" class="story"><p>~100-240В<br>
-Опции: ~100-240В/=100-240B; 36-72B; 19-36B; 9-18В
-</p></td>
+              <td valign="top" class="story">BG3!!!-A-XN-1-UPM с креплением Antcom MTR-2</td>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS (-70°C до +85°C).</td>
             </tr>
-            <tr >
-              <td valign="top" class="story"><p>Потребляемая мощность: </p></td>
-              <td valign="top" class="story"><p>40 Вт</p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Рабочая температура:</p></td>
-              <td valign="top" class="story"><p>0 ... 50°C </p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Влажность:</p></td>
-              <td valign="top" class="story"><p>Максимум. 85%</p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Габариты:</p></td>
-              <td valign="top" class="story"><p>443 x 45 x 288 мм.</p></td>
-            </tr>
-            <tr >
-              <td colspan="2" valign="top" class="story"><p>&nbsp;</p></td>
-              </tr>
               </table>
+              
 				<!-- InstanceEndEditable -->
                  </div>
 				<!-- InstanceBeginEditable name="NewTabsLevel3" -->Editregion <!-- InstanceEndEditable -->

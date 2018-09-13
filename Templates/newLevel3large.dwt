@@ -176,7 +176,9 @@ $(function(){
 				<!-- InstanceBeginEditable name="OrderSample" -->Editregion <!-- InstanceEndEditable -->
                  </div>
                 <div id="tabs-5">
-				<!-- InstanceBeginEditable name="Accessoerity" -->Editregion <!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="Accessoerity" -->
+                <!-- TemplateBeginEditable name="AccessL3" -->Eq name<!-- TemplateEndEditable -->
+                 <!-- InstanceEndEditable -->
                  </div>
 				<!-- InstanceBeginEditable name="NewTabsLevel3" -->Editregion <!-- InstanceEndEditable -->
                 </div>
