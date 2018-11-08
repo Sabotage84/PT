@@ -101,3 +101,12 @@ body {
 .stripedTable tr:nth-child(odd) {
       background-color: #E4E4E4;
 }
+
+.index_small_img{
+	width:250px; 
+	height:100px; 
+	allign:left; 
+	float:left; 
+	vertical-align:top;
+}
+
