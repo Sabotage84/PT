@@ -110,3 +110,19 @@ body {
 	vertical-align:top;
 }
 
+.ims-mod{
+	
+	width: 60px;
+   /* height: auto;*/
+    padding: 2px;
+    color: #fff;
+    margin-bottom: 4px;
+    display: block;
+    clear: left;
+    float: left;
+	font: inherit;
+    text-align: center;
+	font-size: 12px;
+    vertical-align: baseline;
+}
+
