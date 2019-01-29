@@ -23,11 +23,7 @@
 <script src="../Scripts/jquery-3.2.1.min.js"></script>
 <link href="../Scripts/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
  <script src="../Scripts/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
- <script>
-        $(function () {
-            $("#tabs").tabs();
-        } );
-    </script>
+ 
 <link rel="stylesheet" type="text/css" href="../gallery/gallery_styles.css">
 <script>
 $(function(){
@@ -129,7 +125,7 @@ $(function(){
             
             <div class="col-lg-8" style="background-color:white; height:100%; border:dotted 1px #B1B0B0">
                 
-                
+                <div class="row">
                 
                 <h2 class="headline2"><!-- InstanceBeginEditable name="Server_Name" -->Сервер точного времени/Устройство синхронизации частоты и времени Метроном-300<!-- InstanceEndEditable --></h2>
             	<p class="story"><!-- InstanceBeginEditable name="Server_Discription" -->Сервер времени Метроном-300 обеспечивает точное время для сетей любого размера. Он синхронизирует любые NTP- или SNTP-совместимые системы. Метроном-300 предназначен для приема эталонной шкалы времени от глобальных навигационных систем ГЛОНАСС/GPS  и формирования выходных сигналов синхронизации частоты и времени в разных последовательностях и кодах (1PPS, 10MHz, 2,048MHz, 2,048 Mbit/s, IRIG, NMEA и др.).<!-- InstanceEndEditable --> </p>
@@ -152,18 +148,20 @@ $(function(){
             </div>
         </div>
 				
-                <div id="tabs" style="background-color:white; height:100%; border:dotted 1px #B1B0B0; padding-left:0px; padding-right:0px">
-                <ul style="background-color:white; border:none; border-bottom:1px solid rgba(128,119,119,1.00); margin-left:0px;margin-right:0px; border-bottom-right-radius: 0px; 		border-bottom-left-radius: 0px">
-                <!-- InstanceBeginEditable name="TABsLevel3" -->
-                    <li ><a href="#tabs-1">Основные параметры</a></li>
-                    <li ><a href="#tabs-2">Доп. параметры</a></li>
-                    <li ><a href="#tabs-3">Параметры антенны</a></li>
-                    <li ><a href="#tabs-4">Код заказа и опции</a></li>
-                    <li ><a href="#tabs-5">Аксессуары</a></li>
-                    <!-- InstanceEndEditable -->
+                </div>
+                <div class="row" style="background-color:white; height:100%; border:dotted 1px #B1B0B0; padding-left:0px; padding-right:0px">
+                <ul class="nav nav-tabs" role="tablist">
+                
+                
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab" aria-controls="tab-1" aria-selected="true">Основные параметры</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" aria-controls="tab-2" aria-selected="false">Доп. параметры</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-controls="tab-2" aria-selected="false">Параметры антенны</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab" aria-controls="tab-2" aria-selected="false">Код заказа и опции</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab" aria-controls="tab-2" aria-selected="false">Аксессуары</a></li>
+                    
                 </ul>
-
-                <div id="tabs-1">
+ <div class="tab-content" id="myTabContent">
+                <div class="tab-pane active fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab">
                      <!-- InstanceBeginEditable name="MainProperty" -->
                      <table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             
@@ -232,7 +230,7 @@ $(function(){
               </table> 
 			  <!-- InstanceEndEditable -->
                      </div>
-                <div id="tabs-2">
+                <div class="tab-pane fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
                     <!-- InstanceBeginEditable name="ExtProperty" -->
                     <table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             <tr>
@@ -374,7 +372,7 @@ AFNOR кодирование согласно NFS-87500, 100pps, AM-модули
               </table>  
 			  <!-- InstanceEndEditable -->
                      </div>
-                <div id="tabs-3">
+                <div class="tab-pane fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
                      
                     
 					<table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
@@ -404,7 +402,7 @@ AFNOR кодирование согласно NFS-87500, 100pps, AM-модули
               </table>
 					
                      </div>
-                 <div id="tabs-4">
+                 <div class="tab-pane fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
 				<!-- InstanceBeginEditable name="OrderSample" -->
                 <table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             <tr>
@@ -539,7 +537,7 @@ EF-0x-4</td>
               </table>
                  <!-- InstanceEndEditable -->
                  </div>
-                <div id="tabs-5">
+                <div class="tab-pane fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
 				 
                 
               
@@ -572,6 +570,7 @@ EF-0x-4</td>
               </table>
               
 				
+                 </div>
                  </div>
 				<!-- InstanceBeginEditable name="NewTabsLevel3" --> <!-- InstanceEndEditable -->
                 </div>

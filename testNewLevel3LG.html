@@ -129,7 +129,7 @@ $(function(){
             
             <div class="col-lg-8" style="background-color:white; height:100%; border:dotted 1px #B1B0B0">
                 
-                
+                <div class="row">
                 
                 <h2 class="headline2"><!-- InstanceBeginEditable name="Server_Name" -->Eq name<!-- InstanceEndEditable --></h2>
             	<p class="story"><!-- InstanceBeginEditable name="Server_Discription" -->Eq discription<!-- InstanceEndEditable --> </p>
@@ -152,8 +152,9 @@ $(function(){
             </div>
         </div>
 				
-                <div id="tabs" style="background-color:white; height:100%; border:dotted 1px #B1B0B0; padding-left:0px; padding-right:0px">
-                <ul style="background-color:white; border:none; border-bottom:1px solid rgba(128,119,119,1.00); margin-left:0px;margin-right:0px; border-bottom-right-radius: 0px; 		border-bottom-left-radius: 0px">
+                </div>
+                <div class="row" style="background-color:white; height:100%; border:dotted 1px #B1B0B0; padding-left:0px; padding-right:0px">
+                <ul class="nav nav-tabs" role="tablist">
                 <!-- InstanceBeginEditable name="TABsLevel3" -->
                     <li ><a href="#tabs-1">Основные параметры</a></li>
                     <li ><a href="#tabs-2">Доп. параметры</a></li>
@@ -162,8 +163,8 @@ $(function(){
                     <li ><a href="#tabs-5">Аксессуары</a></li>
                     <!-- InstanceEndEditable -->
                 </ul>
-
-                <div id="tabs-1">
+ <div class="tab-content" id="myTabContent">
+                <div class="tab-pane active fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab">
                      <!-- InstanceBeginEditable name="MainProperty" --><table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             <tr>
               <td colspan="2" valign="top"  class="story"><p class="story">Основные параметры. </p>                </td>
@@ -234,7 +235,7 @@ $(function(){
               </tr>
               </table> <!-- InstanceEndEditable -->
                      </div>
-                <div id="tabs-2">
+                <div class="tab-pane fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
                     <!-- InstanceBeginEditable name="ExtProperty" --><table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             <tr>
               <td colspan="2" valign="top"  class="story"><p class="story">Основные параметры. </p>                </td>
@@ -305,14 +306,15 @@ $(function(){
               </tr>
               </table> <!-- InstanceEndEditable -->
                      </div>
-                <div id="tabs-3">
+                <div class="tab-pane fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
                     <!-- InstanceBeginEditable name="AntennaProperty" -->Edit region <!-- InstanceEndEditable -->
                      </div>
-                 <div id="tabs-4">
+                 <div class="tab-pane fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
 				<!-- InstanceBeginEditable name="OrderSample" -->Editregion <!-- InstanceEndEditable -->
                  </div>
-                <div id="tabs-5">
+                <div class="tab-pane fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
 				<!-- InstanceBeginEditable name="Accessoerity" -->Editregion <!-- InstanceEndEditable -->
+                 </div>
                  </div>
 				<!-- InstanceBeginEditable name="NewTabsLevel3" -->Editregion <!-- InstanceEndEditable -->
                 </div>
