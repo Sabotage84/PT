@@ -93,19 +93,19 @@
                     <!-- TemplateEndEditable -->
                 </ul>
  <div class="tab-content" id="myTabContent">
-                <div class="tab-pane active fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab">
+                <div class="tab-pane metro-tabs-minHeight active fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab">
                      <!-- TemplateBeginEditable name="MainProperty" -->Editregion <!-- TemplateEndEditable -->
                      </div>
-                <div class="tab-pane fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
+                <div class="tab-pane metro-tabs-minHeight fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
                     <!-- TemplateBeginEditable name="ExtProperty" -->Editregion <!-- TemplateEndEditable -->
                      </div>
-                <div class="tab-pane fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
+                <div class="tab-pane metro-tabs-minHeight fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
                     <!-- TemplateBeginEditable name="AntennaProperty" -->Edit region <!-- TemplateEndEditable -->
                      </div>
-                 <div class="tab-pane fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
+                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
 				<!-- TemplateBeginEditable name="OrderSample" -->Editregion <!-- TemplateEndEditable -->
                  </div>
-                <div class="tab-pane fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
+                <div class="tab-pane metro-tabs-minHeight fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
 				<!-- TemplateBeginEditable name="Accessoerity" -->Editregion <!-- TemplateEndEditable -->
                  </div>
                  </div>

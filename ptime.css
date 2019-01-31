@@ -126,3 +126,7 @@ body {
     vertical-align: baseline;
 }
 
+.metro-tabs-minHeight{
+	min-height: 250px;
+}
+
