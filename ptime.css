@@ -6,7 +6,9 @@ body {
 	padding-left:3%;
     padding-right:3%;
     padding-top:1%;
+	margin-bottom:-1000px;
 	background: linear-gradient(to bottom, rgb(99, 91, 91),rgb(170, 170, 170)) no-repeat;
+	background-size:500% 500%;
 }
 
 .separ{
