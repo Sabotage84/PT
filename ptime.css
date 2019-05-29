@@ -132,3 +132,22 @@ body {
 	min-height: 250px;
 }
 
+.textalign{
+    display: table-cell;
+}
+
+.textInTheMiddle{
+   /* display: block; */
+   display: table-cell; /* !!! */
+   height: 100px;
+   text-align: left;
+   vertical-align: middle; /* не работает */ 
+}
+
+.imageForSmallIMSModuls
+{
+	height:130px;
+	width:160px;
+	
+	}
+
