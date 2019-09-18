@@ -225,6 +225,10 @@ $(function(){
               <td valign="top"  class="story">Грозоразрядник для  антенны GPS.</td>
             </tr>
             <tr>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS Радиус-50</td>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS со встроенной грозозащитой. (-45…65 С)</td>
+            </tr>
+            <tr>
               <td valign="top" class="story">GPSGL-TMG-SPI-40NCB</td>
               <td valign="top" class="story">Антенна ГЛОНАСС/GPS (-40°C до +85°C).</td>
             </tr>
