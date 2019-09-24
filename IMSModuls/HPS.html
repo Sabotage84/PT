@@ -129,26 +129,26 @@ $(function(){
                 
                 <div class="row">
                 
-                <h2 class="headline2"><!-- InstanceBeginEditable name="Server_Name" -->Модуль IMS-LNE<!-- InstanceEndEditable --></h2>
+                <h2 class="headline2"><!-- InstanceBeginEditable name="Server_Name" -->Модуль IMS-HPS<!-- InstanceEndEditable --></h2>
             	<p class="story"><!-- InstanceBeginEditable name="Server_Discription" -->
+				HPS-модуль нового поколения, поддерживающий самые современные протоколы IEEE1588(PTP)/SyncE/Carrier Grade/NTP. Протокол IEEE1588 (Precision Time Protocol, PTP) поддерживается полностью новым модулем IMS-HPS с комбинированным разъемом RJ45/SFP Gigabit Ethernet. Встроенный двухъядерный 1 ГГц процессор модуля позволяет работать с несколькими сотнями вторичных PTP клиентов. Модуль IMS-HPS поддерживает одно- и двухходовые режимы (1-step и 2-step mode), уровни 2 и 3 (IPv4 и IPv6), режимы измерения запаздывания End-to-End и Peer-to-Peer, а также Unicast, Multicast и гибридный режимы.
+
+Модуль PTP поддерживает стандартные профили настроек - telecom, enterprise и power. Интерфейс модуля может работать как Master, Slave или динамически переключаться между режимами (Ordinary Clock). В Slave режиме модуль может использоваться в качестве опорного источника для сервера, синхронизируясь от других главных (Master) часов в сети. Шасси 3000 серии вмещает до 10 модулей IMS-HPS, позволяя задать каждому индивидуальные настройки. Это позволяет создавать уникальные измерительные комплексы для PTP, резервирование главных (Master) часов или системы конвертации PTP. Например, синхронизируяь через WAN как вторичные часы от внешних главных часов с профилем Telecom, получить главные часы профиля Power для работы с соответствующими клиентами и приложениями.
 				
-                <p class=" story">
-				LNE-GbE-модуль добавляет сетевые интерфейсы к модулю управления CPU, увеличивая число NTP портов. Использовать дополнительные порты можно для физического разделения сетевого трафика. IMS-LNE это четыре порта 10/100/1000base-T.
-                </p>
 				<!-- InstanceEndEditable --> </p>
 				<div class="gallery-box">
             <div class="view">
             <!-- InstanceBeginEditable name="FirstImage" -->
-                <div class="big-image"><img src="images/imgForGal/LNE1.jpg" alt="image11"></div>
+                <div class="big-image"><img src="images/imgForGal/HPS1.jpg" alt="image11"></div>
                <!-- InstanceEndEditable --> 
                 <a href="#" class="prev"></a>
                 <a href="#" class="next"></a>
             </div>
             <div class="thumbnails">
             <!-- InstanceBeginEditable name="Images" -->
-                <a href="images/imgForGal/LNE1.jpg" class="active"><img src="images/imgForGal/LNE1.jpg" alt="first"></a>
-                <a href="images/imgForGal/LNE2.jpg"><img src="images/imgForGal/LNE2.jpg" alt="image12"></a>
-                
+                <a href="images/imgForGal/HPS1.jpg" class="active"><img src="images/imgForGal/HPS1.jpg" alt="first"></a>
+                <a href="images/imgForGal/HPS2.jpg"><img src="images/imgForGal/HPS2.jpg" alt="image12"></a>
+               
               <!-- InstanceEndEditable -->
             </div>
         </div>
@@ -167,72 +167,75 @@ $(function(){
                 </ul>
  <div class="tab-content" id="myTabContent" style="width:100%">
                 <div class="tab-pane metro-tabs-minHeight active show fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab" >
-                     <!-- InstanceBeginEditable name="MainProperty" -->
-                     <br>
-                    <ul>
-                    	<li>Синхронизация NTP и SNTP</li>
-                        <li>Управление и настройка через WEB-интерфейс</li>
-                    </ul>
-                     
-                      <!-- InstanceEndEditable -->
+                     <!-- InstanceBeginEditable name="MainProperty" --> 
+					<div style="margin-left:20px">
+                        <h2 class="headline2">IMS HPS Client Licences</h2>
+                        <ul class="story">
+                        <li>
+                        <strong>PL-A</strong>
+                        <br/>
+                        Unicast Clients: 8; Delay Req./s*: 1024; NTP Req./s: 1600
+                        </li>
+                        <li>
+                        <strong>PL-B</strong>
+                        <br/>
+                        Unicast Clients: 256; Delay Req./s*: 32768; NTP Req./s: 51200
+                        </li>
+                        <li>
+                        <strong>PL-C</strong>
+                        <br/>
+                        Unicast Clients: 512; Delay Req./s*: 65536; NTP Req./s:102400; PTPv1
+                        </li>
+                        <li>
+                        <strong>PL-D</strong>
+                        <br/>
+                        Unicast Clients: 1024; Delay Req./s*: 131072; NTP Req./s: 204800; PTPv1 **; PTP Monitoring ***
+                        </li>
+                        <li>
+                        <strong>PL-E</strong>
+                        <br/>
+                        Unicast Clients: 2048; Delay Req./s*: 262144; NTP Req./s: 409600; PTPv1 **; PTP Monitoring ***
+                        </li>
+                        </ul>
+                      </div>
+
+					 <!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
-                    <!-- InstanceBeginEditable name="ExtProperty" --> 
-					<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
+                    <!-- InstanceBeginEditable name="ExtProperty" -->
+                    <table width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             
-            <tr>
-              <td width="41%" valign="top" bgcolor="#E4E4E4" class="story"><p>Производительность (S)NTP:</p></td>
-              <td width="59%" valign="top" bgcolor="#E4E4E4" class="story"><p>Обработка 10000 запросов в секунду.</p></td>
-            </tr>
-            <tr>
-              <td valign="top" class="story"><p>Network Time Protocol (NTP):</p></td>
-              <td valign="top" class="story"><p>NTP v2 (RFC 1119), NTP v3 (RFC 1305), NTP v4 (RFC5905) 
-                SNTP v3 (RFC 1769), SNTP v4 (RFC 4330) 
-                MD5 Authentication and Autokey Key Management</p></td>
-            </tr>
             <tr bgcolor="#E4E4E4">
-              <td valign="top" class="story"><p>Точность NTP</p></td>
-              <td valign="top" class="story"><p>0.2 мс (LAN) / 10 мс (WAN)</p></td>
+              <td width="41%" valign="top" bgcolor="#E4E4E4" class="story"><p>Версия:</p></td>
+              <td width="59%" valign="top" class="story"><p>PTP v2 &ndash; 1588 версии 2</p></td>
             </tr>
             <tr>
-              <td valign="top" class="story"><p>Сетевые протоколы OSI Layer 4  (transport layer):</p></td>
-              <td valign="top" class="story"><p>TCP, UDP</p></td>
-            </tr>
-            <tr bgcolor="#E4E4E4">
-              <td valign="top" bgcolor="#E4E4E4" class="story"><p>Сетевые протоколы OSI Layer 7  (application layer): </p></td>
-              <td valign="top" class="story"><p>TELNET, FTP, SSH (incl. SFTP, SCP), HTTP, HTTPS,  SYSLOG, SNMP</p></td>
+              <td valign="top" class="story"><p>Режим работы:</p></td>
+              <td valign="top" class="story"><p>1-step или 2-step.</p></td>
             </tr>
             <tr>
-              <td valign="top" class="story">Simple Network  Management Protocol (SNMP)</td>
-              <td valign="top" class="story">SNMPv1 (RFC 1157), SNMPv2c (RFC 1901-1908), SNMP  v3 (RFC 3411-3418)</td>
+              <td valign="top" bgcolor="#E4E4E4" class="story">Precision Time Protocol (PTP):</td>
+              <td valign="top" bgcolor="#E4E4E4" class="story"> - End-to-End (E2E) и Peer-to-Peer (P2P) механизм задержки;<br>
+                - Hybrid Mode (Multicast SYNC и ANNOUNCE, unicast delay requests);</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">Точность PTP</td>
+              <td valign="top" class="story">10 нс (LAN) / 10 мкс (WAN)</td>
             </tr>
             <tr>
               <td valign="top" bgcolor="#E4E4E4" class="story"><p>Internet Protocol (IP):</p></td>
               <td valign="top" bgcolor="#E4E4E4" class="story"><p>IP v4, IP v6</p></td>
             </tr>
             <tr bgcolor="#E4E4E4">
-              <td valign="top" bgcolor="#FFFFFF" class="story"><p>Поддержка автоконфигурации сетевых установок:</p></td>
-              <td valign="top" bgcolor="#FFFFFF" class="story"><p>IPv4: Dynamic Host Configuration Protocol - DHCP  (RFC 2131)<br>
-IPv6: Autoconfiguration Networking - AUTOCONF</p></td>
+              <td valign="top" bgcolor="#FFFFFF" class="story"><p>Возможные профили: </p></td>
+              <td valign="top" bgcolor="#FFFFFF" class="story"><p>Default (IEEE1588-2008 Annex J), Telecom (ITU-T G.8265.1), Power (IEEE C37.238-2011).</p></td>
             </tr>
             <tr>
-              <td valign="top" bgcolor="#E4E4E4" class="story">Hypertext Transfer Protocol (HTTP):</td>
-              <td valign="top" bgcolor="#E4E4E4" class="story">HTTP/HTTPS (RC 2616)</td>
+              <td valign="top" bgcolor="#E4E4E4" class="story">Гарантия: </td>
+              <td valign="top" bgcolor="#E4E4E4" class="story"><p> 3 года.</p></td>
             </tr>
-            <tr>
-              <td valign="top" class="story">Secure Shell (SSH):</td>
-              <td valign="top" class="story">SSH v1.3, SSH v1.5, SSH v2 (OpenSSH)</td>
-            </tr>
-            <tr>
-              <td valign="top" bgcolor="#E4E4E4" class="story">Telnet:</td>
-              <td valign="top" bgcolor="#E4E4E4" class="story">Telnet (RFC 854-RFC 861)</td>
-            </tr>
-            <tr>
-              <td valign="top" class="story">Стандартная гарантия: </td>
-              <td valign="top" class="story"><p>3 года.</p></td>
-            </tr>
-          </table>
-					<!-- InstanceEndEditable -->
+        </table>
+                     <!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
                      
@@ -265,12 +268,14 @@ IPv6: Autoconfiguration Networking - AUTOCONF</p></td>
 					
                      </div>
                  <div class="tab-pane metro-tabs-minHeight fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
-				<!-- InstanceBeginEditable name="OrderSample" --> 
-				<div class="story" style="font-size:16px">
-               Уточняйте у специалистов компании. +7(495) 616-1000
-                </div>
-				
-				<!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="OrderSample" -->
+                <br>
+                    <ul>
+                    	<li>Синхронизация NTP и SNTP</li>
+                        <li>Управление и настройка через WEB-интерфейс</li>
+                    </ul>
+                
+                 <!-- InstanceEndEditable -->
                  </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
 				 
@@ -311,13 +316,7 @@ IPv6: Autoconfiguration Networking - AUTOCONF</p></td>
 				
                  </div>
                  </div>
-				<!-- InstanceBeginEditable name="NewTabsLevel3" --> 
-				
-				
-				
-				
-				
-				<!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="NewTabsLevel3" --> <!-- InstanceEndEditable -->
                 </div>
             
                 
