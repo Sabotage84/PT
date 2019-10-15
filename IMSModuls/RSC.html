@@ -120,7 +120,9 @@ $(function(){
                 <hr>
                  
                  <div>
-                <!-- InstanceBeginEditable name="leftLevel3" -->Editregion <!-- InstanceEndEditable -->
+                <!-- InstanceBeginEditable name="leftLevel3" -->
+                
+                 <!-- InstanceEndEditable -->
                 </div>  
 				
             </div>
@@ -129,26 +131,21 @@ $(function(){
                 
                 <div class="row">
                 
-                <h2 class="headline2"><!-- InstanceBeginEditable name="Server_Name" -->Модуль IMS-HPS<!-- InstanceEndEditable --></h2>
-            	<p class="story"><!-- InstanceBeginEditable name="Server_Discription" -->
-				HPS-модуль нового поколения, поддерживающий самые современные протоколы IEEE1588(PTP)/SyncE/Carrier Grade/NTP. Протокол IEEE1588 (Precision Time Protocol, PTP) поддерживается полностью новым модулем IMS-HPS с комбинированным разъемом RJ45/SFP Gigabit Ethernet. Встроенный двухъядерный 1 ГГц процессор модуля позволяет работать с несколькими сотнями вторичных PTP клиентов. Модуль IMS-HPS поддерживает одно- и двухходовые режимы (1-step и 2-step mode), уровни 2 и 3 (IPv4 и IPv6), режимы измерения запаздывания End-to-End и Peer-to-Peer, а также Unicast, Multicast и гибридный режимы.
-
-Модуль PTP поддерживает стандартные профили настроек - telecom, enterprise и power. Интерфейс модуля может работать как Master, Slave или динамически переключаться между режимами (Ordinary Clock). В Slave режиме модуль может использоваться в качестве опорного источника для сервера, синхронизируясь от других главных (Master) часов в сети. Шасси 3000 серии вмещает до 10 модулей IMS-HPS, позволяя задать каждому индивидуальные настройки. Это позволяет создавать уникальные измерительные комплексы для PTP, резервирование главных (Master) часов или системы конвертации PTP. Например, синхронизируяь через WAN как вторичные часы от внешних главных часов с профилем Telecom, получить главные часы профиля Power для работы с соответствующими клиентами и приложениями.
-				
-				<!-- InstanceEndEditable --> </p>
+                <h2 class="headline2"><!-- InstanceBeginEditable name="Server_Name" -->Модуль RSC<!-- InstanceEndEditable --></h2>
+            	<p class="story"><!-- InstanceBeginEditable name="Server_Discription" --><strong>RSC-модуль</strong> используется в резервированных системах, когда установлено два модуля приемника, для автоматического (или ручного) переключения между ними при аварии. RSC модуль обеспечивает плавный переход от основного опорного источника к резервному без фазового скачка.<!-- InstanceEndEditable --> </p>
 				<div class="gallery-box">
             <div class="view">
             <!-- InstanceBeginEditable name="FirstImage" -->
-                <div class="big-image"><img src="images/imgForGal/HPS1.jpg" alt="image11"></div>
+                <div class="big-image"><img src="images/imgForGal/RSC1.jpg" alt="image11"></div>
                <!-- InstanceEndEditable --> 
                 <a href="#" class="prev"></a>
                 <a href="#" class="next"></a>
             </div>
             <div class="thumbnails">
             <!-- InstanceBeginEditable name="Images" -->
-                <a href="images/imgForGal/HPS1.jpg" class="active"><img src="images/imgForGal/HPS1.jpg" alt="first"></a>
-                <a href="images/imgForGal/HPS2.jpg"><img src="images/imgForGal/HPS2.jpg" alt="image12"></a>
-               
+                <a href="images/imgForGal/RSC1.jpg" class="active"><img src="images/imgForGal/RSC1.jpg" alt="first"></a>
+                <a href="images/imgForGal/RSC2.jpg"><img src="images/imgForGal/RSC2.jpg" alt="image12"></a>
+                
               <!-- InstanceEndEditable -->
             </div>
         </div>
@@ -167,75 +164,29 @@ $(function(){
                 </ul>
  <div class="tab-content" id="myTabContent" style="width:100%">
                 <div class="tab-pane metro-tabs-minHeight active show fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab" >
-                     <!-- InstanceBeginEditable name="MainProperty" --> 
-					<div style="margin-left:20px">
-                        <h2 class="headline2">IMS HPS лицензии</h2>
-                        <ul class="story">
-                        <li>
-                        <strong>PL-A</strong>
-                        <br/>
-                        Клиентов в режиме Unicast: 8; запросов Delay Req. в секунду (в режиме multicst/Hybrid): 1024; NTP запросов в секунду: 1600
-                        </li>
-                        <li>
-                        <strong>PL-B</strong>
-                        <br/>
-                        UКлиентов в режиме Unicast: 256; апросов Delay Req. в секунду (в режиме multicst/Hybrid): 32768; NTP запросов в секунду: 51200
-                        </li>
-                        <li>
-                        <strong>PL-C</strong>
-                        <br/>
-                        Клиентов в режиме Unicast: 512; апросов Delay Req. в секунду (в режиме multicst/Hybrid): 65536; NTP запросов в секунду:102400; 
-                        </li>
-                        <li>
-                        <strong>PL-D</strong>
-                        <br/>
-                        Клиентов в режиме Unicast: 1024; Dапросов Delay Req. в секунду (в режиме multicst/Hybrid): 131072; NTP запросов в секунду: 204800; 
-                        </li>
-                        <li>
-                        <strong>PL-E</strong>
-                        <br/>
-                        Клиентов в режиме Unicast: 2048; апросов Delay Req. в секунду (в режиме multicst/Hybrid): 262144;  NTP запросов в секунду: 409600; 
-                        </li>
-                        </ul>
-                      </div>
-
-					 <!-- InstanceEndEditable -->
+                     <!-- InstanceBeginEditable name="MainProperty" -->
+                     <br>
+                    <ul>
+                    	<li>Используется в системах с резервированными генераторами</li>
+                        <li>Автоматический или ручной режим работы</li>
+                    </ul>
+                     
+                      <!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
-                    <!-- InstanceBeginEditable name="ExtProperty" -->
-                    <table width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
+                    <!-- InstanceBeginEditable name="ExtProperty" --> 
+					<table width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
             
             <tr bgcolor="#E4E4E4">
-              <td width="41%" valign="top" bgcolor="#E4E4E4" class="story"><p>Версия:</p></td>
-              <td width="59%" valign="top" class="story"><p>PTP v2 &ndash; 1588 версии 2</p></td>
+              <td width="41%" valign="top" class="story"><p>Режимы:</p></td>
+              <td width="59%" valign="top" class="story"><p>Автоматический или ручной.</p></td>
             </tr>
             <tr>
-              <td valign="top" class="story"><p>Режим работы:</p></td>
-              <td valign="top" class="story"><p>1-step или 2-step.</p></td>
+              <td valign="top" class="story">Стандартная гарантия: </td>
+              <td valign="top" class="story"><p> 3 года.</p></td>
             </tr>
-            <tr>
-              <td valign="top" bgcolor="#E4E4E4" class="story">Precision Time Protocol (PTP):</td>
-              <td valign="top" bgcolor="#E4E4E4" class="story"> - End-to-End (E2E) и Peer-to-Peer (P2P) механизм задержки;<br>
-                - Hybrid Mode (Multicast SYNC и ANNOUNCE, unicast delay requests);</td>
-            </tr>
-            <tr>
-              <td valign="top" class="story">Точность PTP</td>
-              <td valign="top" class="story">10 нс (LAN) / 10 мкс (WAN)</td>
-            </tr>
-            <tr>
-              <td valign="top" bgcolor="#E4E4E4" class="story"><p>Internet Protocol (IP):</p></td>
-              <td valign="top" bgcolor="#E4E4E4" class="story"><p>IP v4, IP v6</p></td>
-            </tr>
-            <tr bgcolor="#E4E4E4">
-              <td valign="top" bgcolor="#FFFFFF" class="story"><p>Возможные профили: </p></td>
-              <td valign="top" bgcolor="#FFFFFF" class="story"><p>Default (IEEE1588-2008 Annex J), Telecom (ITU-T G.8265.1), Power (IEEE C37.238-2011).</p></td>
-            </tr>
-            <tr>
-              <td valign="top" bgcolor="#E4E4E4" class="story">Гарантия: </td>
-              <td valign="top" bgcolor="#E4E4E4" class="story"><p> 3 года.</p></td>
-            </tr>
-        </table>
-                     <!-- InstanceEndEditable -->
+          </table>
+					<!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
                      
@@ -314,7 +265,10 @@ $(function(){
 				
                  </div>
                  </div>
-				<!-- InstanceBeginEditable name="NewTabsLevel3" --> <!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="NewTabsLevel3" -->
+                
+                
+                 <!-- InstanceEndEditable -->
                 </div>
             
                 
