@@ -181,7 +181,118 @@ $(function(){
 					<!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
-                    <!-- InstanceBeginEditable name="ExtProperty" -->Editregion <!-- InstanceEndEditable -->
+                    <!-- InstanceBeginEditable name="ExtProperty" -->
+						<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="story stripedTable">
+            <tr >
+              <td valign="top"><p>Приемник: </p></td>
+              <td valign="top"><p>6-канальный C/A GPS </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Тип антенны: </p></td>
+              <td valign="top"><p>Наружная антенна GPS, с питанием по радиочастотному кабелю. </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Индикация состояния: </p></td>
+              <td valign="top"><p>светодиодная </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Время синхронизации: <strong></strong></p></td>
+              <td valign="top"><p>Максимально 1 минута при нормальном режиме работы; приблизительно 12 минут при холодном старте </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Частотные выходы : </p></td>
+              <td valign="top"><p>10 МГц, TTL-уровень </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Импульсные выходы : </p></td>
+              <td valign="top"><p>3 программируемых TTL-выхода, по умолчанию сконфигурированы как: <br>
+        Channel 0: PPS (TTL, RS232), длительность импульса: 200 мс <br>
+        Channel 1: PPM (TTL), длительность импульса: 200 мс <br>
+        Channel 2: совместимый с DCF77 (TTL), длительность импульса: 100/200 мс </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Точность импульсных выходов: </p></td>
+              <td valign="top"><p>&lt; ± 250 нс </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Интерфейс: </p></td>
+              <td valign="top"><p>RS232 </p></td>
+            </tr>
+            
+            <tr >
+              <td valign="top"><p>Формат данных интерфейсов: </p></td>
+              <td valign="top"><p>Скорость: 300, 600, 1200, 2400, 4800, 9600, 19200 Формат: 7N2, 7E1, 7E2, 8E1, 8N1, 8N2 <br>
+        Временные телеграммы: Meinberg Standard-Telegram, SAT, Uni Erlangen (NTP), SPA, NMEA0183 (RMC) или capture-telegramm </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Statusbyte: </p></td>
+              <td valign="top"><p>Informations about free running mode, daylight savings time and DST pre-switch anouncement, synchronization since last reset, GMT/UTC time and validity of the hardware clock data </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Выход не модулированного временного кода: </p></td>
+              <td valign="top"><p>TTL, 50 Ом </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Выход модулированного временного кода </p></td>
+              <td valign="top"><p><em>IRIG</em> AM синусоида : <br>
+        3 В pp (MARK), 1 В pp (SPACE) 50 Ом </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Генерация временных кодов: </p></td>
+              <td valign="top"><p><em>IRIG</em> B 002: 100 pps , DCLS -сигнал, без несущей, BCD time of year <br>
+                  <em>IRIG</em> B 122: 100 pps , AM синусоида, несущая 1 кГц, BCD time of year <br>
+        IRIG B 003: 100 pps , DCLS -сигнал, без несущей, BCD time of year , SBS time of day <br>
+        IRIG B 123: 100 pps , AM синусоида, несущая 1кГц, BCD time of year , SBS time of day <br>
+        IEEE 1344: Кодирование согласно IEEE 1344-1995, 100 pps , AM -модулированная синусоида, несущая 1 кГц, BCD time of year , SBS time of day , IEEE 1344 expansion for date , time zone , daylight saving and leap second in Control Funktions Segment <br>
+        <em>AFNOR-</em>кодирование согласно NFS -87500, 100 pps , AM -модулированная синусоида, несущая 1 кГц, BCD time of year , complete date , SBS time of day </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Входы временной синхронизации: </p></td>
+              <td valign="top"><p>Разрешение: 100 нс, синхронизация по срезу TTL -импульса <br>
+        Время синхронизации считывается через RS 232-интерфейс </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Электрические разъемы: </p></td>
+              <td valign="top"><p>BNC (розетка) для подключения антенны <br>
+        BNC (розетка) для модулированных временных кодов <br>
+        9 pin sub D (вилка) </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Компьютерный интерфейс: </p></td>
+              <td valign="top"><p><em>PCI </em>  Interface <br>
+                  </td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Резервная батарея: </p></td>
+              <td valign="top"><p>При отключении основного питания, генератор переходит в атономный режим работы, используя встроенный осциллятор. Данные по альманахам сохраняются в ОЗУ. Срок годности литиевой батареи – не менее 10 лет. </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Тип платы: </p></td>
+              <td valign="top"><p>Стандартная плата (101 x 150 мм ) </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Питание: </p></td>
+              <td valign="top"><p>+5В, @ 400мA <br>
+        +12В, @ 170мА </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Температура окружающей среды: </p></td>
+              <td valign="top"><p>0 ... 50°C </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Относительная влажность: </p></td>
+              <td valign="top"><p>максимум 85% </p></td>
+            </tr>
+            <tr >
+              <td valign="top"><p>Опции: </p></td>
+              <td valign="top"><p>Дополнительный независимый интерфейс RS232 <br>
+        Дополнительный оптический выход для IRIG DCLS (вместо IRIG AM) <br>
+        Замена осциллятора OCXO - LQ (вместо TCXO ) для более долгой работы в автономном режиме </p></td>
+            </tr>
+          </table>
+					
+					
+					<!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
                      
@@ -214,7 +325,9 @@ $(function(){
 					
                      </div>
                  <div class="tab-pane metro-tabs-minHeight fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
-				<!-- InstanceBeginEditable name="OrderSample" -->Editregion <!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="OrderSample" --><div class="story" style="font-size:16px">
+               Уточняйте у специалистов компании. +7(495) 616-1000
+                </div> <!-- InstanceEndEditable -->
                  </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
 				 
@@ -255,7 +368,10 @@ $(function(){
 				
                  </div>
                  </div>
-				<!-- InstanceBeginEditable name="NewTabsLevel3" -->Editregion <!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="NewTabsLevel3" -->
+					
+					
+					<!-- InstanceEndEditable -->
                 </div>
             
                 
