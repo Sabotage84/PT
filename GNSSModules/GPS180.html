@@ -161,10 +161,161 @@ $(function(){
                 </ul>
  <div class="tab-content" id="myTabContent" style="width:100%">
                 <div class="tab-pane metro-tabs-minHeight active show fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab" >
-                     <!-- InstanceBeginEditable name="MainProperty" -->Editregion <!-- InstanceEndEditable -->
+                     <!-- InstanceBeginEditable name="MainProperty" --> 
+					<div>
+						<br>
+					<ul>
+            <li class="story">Выходы PPS и PPM;</li>
+            <li class="story">2 выхода временной синхронизации;</li>
+            <li class="story">2  интерфейса RS-232;</li>
+            <li class="story">Выход аварий;</li>
+            <li class="story">Синтезатор частот;</li>
+            <li class="story">Эмулятор стандарта DCF77;</li>
+            <li class="story">GPS-антенна  подсоединяется по кабелю RG-58  длиной до 300 метров  без дополнительных усилителей;</li>
+            <li class="story">Flash-EPROM  с загрузчиком; </li>
+            <li class="story">Развязка по постоянному току в антенной цепи;</li>
+            <li class="story">Стандартные частотные выходы;</li>
+            <li class="story">Опционально до 4 последовательных портов, 3  программируемых выхода, генератор временных кодов (<em>IRIG-B, AFNOR</em>),  выход 5 МГц;</li>
+            <li class="story">Может быть расширен опционально.</li>
+          </ul>
+					</div>
+					
+					
+					<!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
-                    <!-- InstanceBeginEditable name="ExtProperty" -->Editregion <!-- InstanceEndEditable -->
+                    <!-- InstanceBeginEditable name="ExtProperty" --> 
+					<table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr align="left" bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Приемник:</strong></p></td>
+              <td valign="top"><p class="story">6-канальный <strong>GPS</strong>.    C/A-код</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Антенна:</strong> </p></td>
+              <td valign="top"><p class="story">GPS-антенна    с питанием по фидеру. Длина кабеля без использования усилителя:<br>
+                - RG58 до 300м;<br>
+                - RG213 до 600м.</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Дисплей:</strong> </p></td>
+              <td valign="top"><p class="story">ЖК, 4 x 16    символов, меню пользователя<br>
+                отображение локального времени, либо по шкале UTC</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Тип кабеля:</strong> </p></td>
+              <td valign="top"><p class="story">Коаксиальный RG58    (разъемы BNC, N)</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Информация состояния:</strong></p></td>
+              <td valign="top"><p class="story">Светодиодная: <br>
+                - об системных ошибках и рассинхронизации;<br>
+                - о том, что расчет позиции был выполнен после сброса </p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Время синхронизации:</strong> </p></td>
+              <td valign="top"><p class="story">Максимально 1 минута при нормальном режиме работы; приблизительно    12 минут при холодном старте </p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Частотные выходы:</strong></p></td>
+              <td valign="top"><p class="story">10 MГц, 1 MГц, 100 КГц или (опционально) 5MГц, TTL<br>
+                Синтезатор от 1/8 Гц до 10 MГц (TTL, синусоида 1.5Veff, открытый сток)<br>
+                Точность: ±1·10E-9 (осциллятор OCXO LQ), тренировка от GPS в течение 20 минут<br>
+                Доступны другие типы внутренних осцилляторов</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Импульсные выходы:</strong></p></td>
+              <td valign="top"><p class="story">Импульс в секунду (<em>PPS</em>)    и импульс в минуту (<em>PPM</em>).    TTL -уровни,    длина импулься: 200мс</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Точность импульсных выходов:</strong></p></td>
+              <td valign="top"><p class="story">В зависимости от установленного внутреннего осциллятора:<br>
+&lt; ±250 нс (TCXO, OCXO LQ)<br>
+&lt; ±100 нс (OCXO MQ, OCXO HQ, OCXO-DHQ, Рубидий)</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Интерфейс:</strong></p></td>
+              <td valign="top"><p class="story">Два независимых интерфейса RS232, конфигурация через экранное меню прибора</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Формат данных интерфейса:</strong></p></td>
+              <td valign="top"><p class="story">Скорость: 300, 600, 1200, 2400, 4800, 9600, 19200 Формат: 7N2,    7E1, 7E2, 8E1, 8N1, 8N2 Телеграммы времени: Meinberg Standard-Telegram, SAT,    Uni Erlangen (NTP), SPA, NMEA0183 (RMC), COMPUTIME либо capture-telegramm</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Эмуляция DCF77:</strong></p></td>
+              <td valign="top"><p class="story">DCF77, TTL-уровень</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Коммутируемые выходы:</strong></p></td>
+              <td valign="top"><p class="story">Опционально:<br>
+                3 TTL-выхода могут быть    настроены независимо друг от друга для следующих режимов:  <br>
+                - произвольные циклы или фиксированные импульсы<br>
+                - режим таймера; могут быть установлены три состояния 'ON' и три состояния 'OFF' за день.<br>
+                Состояния коммутации могут быть инвертированы для всех трех выходов; длина    импульса настраивается с шагом 10 мс в диапазоне от 10 мс до 10 с. </p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Генерация временных кодов:</strong></p></td>
+              <td valign="top"><p class="story">Опционально:<br>
+                IRIG    B002, B122, B003, B123, B006, B126, B007, B127, IEEE1344 или AFNOR:<br>
+                - AM-модулированный    синусоидальный сигнал: 3Vpp    (MARK), 1Vpp (SPACE)     50 Ом<br>
+                - TTL-уровень</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Входы временной синхронизации:</strong></p></td>
+              <td valign="top"><p class="story">Разрешение: 100 нс, синхронизация по срезу TTL-импульса<br>
+                Время синхронизации считывается через RS232-интерфейс</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Аварийный выход:</strong></p></td>
+              <td valign="top"><p class="story">Синхронно с состоянием модуля, высокий уровень TTL-сигнала в случае появления аварии</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Размеры лицевой панели:</strong> </p></td>
+              <td valign="top"><p class="story">21HP/3U (106мм x 128мм), с интегрированной мембранной    клавиатурой </p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Электрические коннекторы:</strong></p></td>
+              <td valign="top"><p class="story">64 pin rear VG    edge connector DIN 41612</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Антенный вход:</strong></p></td>
+              <td valign="top"><p class="story">BNC</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Потребление тока:</strong></p></td>
+              <td valign="top"><p class="story">+5В от 1.1 A до 1.4 A (в    зависимости от встроенного осциллятора)</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Тип встроенной резервной    батареи:</strong></p></td>
+              <td valign="top"><p class="story"><a></a><a>При отключении основного питания, генератор    переходит в атономный режим работы, используя встроенный осциллятор. Данные    по альманахам сохраняются в ОЗУ. Срок годности литиевой батареи – не менее 10    лет.</a> </p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Аппаратное ПО:</strong></p></td>
+              <td valign="top"><p class="story">Загрузочный Flash-EPROM, </p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Тип платы:</strong></p></td>
+              <td valign="top"><p class="story">Еврокарта</p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Питание:</strong></p></td>
+              <td valign="top"><p class="story">+5В DC</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Рабочая температура окружающей    среды:</strong></p></td>
+              <td valign="top"><p class="story">0 ... 50°C </p></td>
+            </tr>
+            <tr bgcolor="white">
+              <td valign="top"><p class="story"><strong>Относительная влажность:</strong></p></td>
+              <td valign="top"><p class="story">максимум 85%</p></td>
+            </tr>
+            <tr bgcolor="#E6E6E6">
+              <td valign="top"><p class="story"><strong>Опции:</strong></p></td>
+              <td valign="top"><p class="story"><strong>NEW</strong>: опционально до 4 последовательных интерфейсов, 3 программируемых    TTL-выхода и    генератор временного кода (<em>IRIG-B, AFNOR</em>)</p></td>
+            </tr>
+          </table>
+					
+					
+					<!-- InstanceEndEditable -->
                      </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
                      
@@ -197,7 +348,12 @@ $(function(){
 					
                      </div>
                  <div class="tab-pane metro-tabs-minHeight fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
-				<!-- InstanceBeginEditable name="OrderSample" -->Editregion <!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="OrderSample" --> 
+					 
+					 <div class="story" style="font-size:16px">
+               Уточняйте у специалистов компании. +7(495) 616-1000
+                </div>
+					 <!-- InstanceEndEditable -->
                  </div>
                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
 				 
@@ -238,7 +394,11 @@ $(function(){
 				
                  </div>
                  </div>
-				<!-- InstanceBeginEditable name="NewTabsLevel3" -->Editregion <!-- InstanceEndEditable -->
+				<!-- InstanceBeginEditable name="NewTabsLevel3" --> 
+					
+					
+					
+					<!-- InstanceEndEditable -->
                 </div>
             
                 
