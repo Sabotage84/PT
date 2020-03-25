@@ -1,0 +1,276 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/newLevel3lgServers.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Документ без названия</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<link href="../ptime.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script>
+         $(function () {
+             $(".NavMenu").click(function () {
+                 window.location.href = $(this).children('a').attr('href');
+                 
+             });
+         });
+    </script>
+<!-- InstanceBeginEditable name="Scripts" -->
+<script src="../Scripts/jquery-3.2.1.min.js"></script>
+<link href="../Scripts/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+ <script src="../Scripts/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+ 
+<link rel="stylesheet" type="text/css" href="../gallery/gallery_styles.css">
+<script>
+$(function(){
+  $('.thumbnails a').click(function(){                                 // При нажатиина миниатюру
+    var images = $(this).find('img');
+    var imgSrc = images.attr('src');
+ 
+    $(".big-image img").attr({ src: imgSrc });                         // Подменяем адрес большого изображения на адрес выбранного
+    $(this).siblings('a').removeClass('active');                       // Удаляем класс .active со ссылки чтоб убрать рамку
+    images.parent().addClass('active');                                // Добавляем класс .active на выбранную миниатюру
+    return false;
+  });
+ 
+  $('.next').click(function(){                                         // При нажатии на кнопку "вперед"
+    var count = $('.thumbnails a').length;                             // Общее количество изображений
+    var n = parseInt($('.thumbnails a').index($('.active')) + 1);      // Порядковый номер текущего изображения
+    var activeImg = $('.thumbnails .active');                          // Активное на данный момент изображение
+    var nextSrc;
+ 
+    if (count != n){                                                   // - Если изображение не последнее
+      nextSrc = activeImg.next().find('img').attr('src');              // В переменную записывается адрес следующего изображения
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active с предыдущей миниатюры
+      activeImg.next().addClass('active');                             // На миниатюру следующего изображения вешается класс .active
+    }else{                                                             // - Если текущее изображение последнее в списке
+      nextSrc = $('.thumbnails a').first().find('img').attr('src');    // В переменную записывается адрес первого изображения
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active с предыдущей миниатюры
+      $('.thumbnails a').first().addClass('active');                   // На первую миниатюру вешается класс .active
+    }
+    $('.big-image img').attr({ src: nextSrc });                        // Подменяем адрес большого изображения на адрес следующего
+    return false;
+  });
+ 
+ 
+  $('.prev').click(function(){                                         // При нажатии на кнопку "назад"
+    var count = $('.thumbnails a').length;                             // Общее количество изображений
+    var n = parseInt($('.thumbnails a').index($('.active')) + 1);      // Порядковый номер текущего изображения
+    var activeImg = $('.thumbnails .active');                          // Активное на данный момент изображение
+    var prevSrc;
+ 
+    if (n != 1){                                                       // - Если текущее изображение не первое
+      prevSrc = activeImg.prev().find('img').attr('src');              // В переменную записывается адрес предыдущего изображения           
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active активной до этого миниатюры
+      activeImg.prev().addClass('active');                             // На миниатюру изображения слева вешается класс .active
+    }else{                                                             // - Если текущее изображение первое
+      prevSrc = $('.thumbnails a:last').find('img').attr('src');       // В переменную записывается адрес последнего изображения
+      $('.thumbnails .active').removeClass('active');                  // Удаляется класс .active с предыдущей миниатюры
+      $('.thumbnails a:last').addClass('active');                      // На последнюю миниатюру вешается класс .active
+    }
+    $('.big-image img').attr({ src: prevSrc });                        // Подменяется адрес большого изображения на адрес следующего
+    return false;
+  });
+})
+</script> 
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body >
+<div class="container" style="padding:0px; max-width:1200px">
+<div class="row justify-content-center">
+	 <div id="mainBlocElem" class="center-block" style="background-color:white; padding:0px; max-width:1200px">
+
+        <div class="row" style="background-color:white; padding:0px">
+
+            <div class="col-lg-12" style="padding-right:1px">
+                <a href="../index.html"><img src="../images/sm_logo.gif" class="pull-left"></a>
+                <img src="../images/mail_phone.png" class="float-right" />
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" style="background-color:aliceblue; padding:0px">
+             
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 separ" >
+                <br>
+            </div>
+        </div>
+
+        <div class="row" style="background-color:white; padding-top:10px" >
+            <div class="col-lg-4" >
+                <div class="NavMenu"><a href="../servsrs.html">Серверы точного времени </a></div>
+                <div class="NavMenu"><a href="../gnss-subrack-systems.html">Спутниковые приемники</a></div>
+                <div class="NavMenu"><a href="../signal-distribution.html">Размножители и конверторы</a></div>
+                <div class="NavMenu"><a href="../displays.html">Системы часофикации</a></div>
+                <div class="NavMenu"><a href="../additional-equipment.html">Дополнительное оборудование и аксессуары</a></div>
+                <div class="NavMenu"><a href="../download.html">Документация на оборудование</a></div>
+                <div class="NavMenu"><a href="../Clients/clients.html">Наши заказчики</a></div>
+                <hr>
+                 
+                 <div>
+                <!-- InstanceBeginEditable name="leftLevel3" -->Editregion <!-- InstanceEndEditable -->
+                </div>  
+				
+            </div>
+            
+            <div class="col-lg-8" style="background-color:white; height:100%; border:dotted 1px #B1B0B0">
+                
+                <div class="row">
+                
+                <h2 class="headline2"><!-- InstanceBeginEditable name="Server_Name" -->Eq name<!-- InstanceEndEditable --></h2>
+            	<p class="story"><!-- InstanceBeginEditable name="Server_Discription" -->Eq discription<!-- InstanceEndEditable --> </p>
+				<div class="gallery-box">
+            <div class="view">
+            <!-- InstanceBeginEditable name="FirstImage" -->
+                <div class="big-image"><img src="images/M300/m300-standard-conf.jpg" alt="image11"></div>
+               <!-- InstanceEndEditable --> 
+                <a href="#" class="prev"></a>
+                <a href="#" class="next"></a>
+            </div>
+            <div class="thumbnails">
+            <!-- InstanceBeginEditable name="Images" -->
+                <a href="images/M300/m300-standard-conf.jpg" class="active"><img src="images/M300/m300-standard-conf.jpg" alt="first"></a>
+                <a href="images/M300/m300_phys-dimensions.jpg"><img src="images/M300/m300_phys-dimensions.jpg" alt="image12"></a>
+                <a href="images/M300/m300gps_com-rs232_pp.jpg"><img src="images/M300/m300gps_com-rs232_pp.jpg" alt="image13"></a>
+                <a href="images/M300/m300gps_tc-rs4_pp.jpg"><img src="images/M300/m300gps_tc-rs4_pp.jpg" alt="image14"></a>
+                <a href="images/M300/ntp-server-m300-gps_3.jpg"><img src="images/M300/ntp-server-m300-gps_3.jpg" alt="image15"></a>
+              <!-- InstanceEndEditable -->
+            </div>
+        </div>
+				
+                </div>
+                <div class="row" style="background-color:white; height:100%; border:dotted 1px #B1B0B0; padding-left:0px; padding-right:0px">
+                <ul class="nav nav-tabs" role="tablist">
+                
+                
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab" aria-controls="tab-1" aria-selected="true" style="padding-left:5px; padding-right:5px">Основные параметры</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" aria-controls="tab-2" aria-selected="false" style="padding-left:5px; padding-right:5px">Доп. параметры</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-controls="tab-2" aria-selected="false" style="padding-left:5px; padding-right:5px">Параметры антенны</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab" aria-controls="tab-2" aria-selected="false" style="padding-left:5px; padding-right:5px">Код заказа и опции</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab" aria-controls="tab-2" aria-selected="false" style="padding-left:5px; padding-right:5px">Аксессуары</a></li>
+                    
+                </ul>
+ <div class="tab-content" id="myTabContent" style="width:100%">
+                <div class="tab-pane metro-tabs-minHeight active show fade in" id="tabs-1" role="tabpanel" aria-labelledby="tab-1-tab" >
+                     <!-- InstanceBeginEditable name="MainProperty" -->Editregion <!-- InstanceEndEditable -->
+                     </div>
+                <div class="tab-pane metro-tabs-minHeight fade" id="tabs-2" role="tabpanel" aria-labelledby="tab-2-tab">
+                    <!-- InstanceBeginEditable name="ExtProperty" -->Editregion <!-- InstanceEndEditable -->
+                     </div>
+                <div class="tab-pane metro-tabs-minHeight fade" id="tabs-3" role="tabpanel" aria-labelledby="tab-3-tab">
+                     
+                    
+					<table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
+            <tr>
+              <td width="50%" valign="top" class="story">Антенна: </td>
+              <td width="50%" valign="top" class="story">Наружная антенна ГЛОНАСС/GPS с встроенным грозоразрядником.<br>
+Подробнее смотрите здесь.</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">Тип спутниковой системы:</td>
+              <td valign="top" class="story">ГЛОНАСС/GPS</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">Частотный диапазон, усиление,  сопротивление:</td>
+              <td valign="top" class="story">11590+/- 16 МГц: ГЛОНАСС L1 14 несущих (-7..+6) 1602+/-4МГц, полоса +/-0,5МГц; GPS L1 несущая 1575МГц, полоса +/-1МГц; 40dB+/-4dB ГЛОНАСС L1 / 43dB+/-4dB GPS L1; 50 Ом</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">Параметры конструкции:</td>
+              <td valign="top" class="story">100х100х135 мм, 0,28 кг</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">Рабочая температура:</td>
+              <td valign="top"  class="story">-40 ... +80°C<br>
+Опция: Наружная антенна ГЛОНАСС/GPS (-70°C до +85°C). <br>
+Подробнее смотрите здесь.</td>
+            </tr>
+              </table>
+					
+                     </div>
+                 <div class="tab-pane metro-tabs-minHeight fade" id="tabs-4" role="tabpanel" aria-labelledby="tab-4-tab">
+				<!-- InstanceBeginEditable name="OrderSample" -->Editregion <!-- InstanceEndEditable -->
+                 </div>
+                <div class="tab-pane metro-tabs-minHeight fade" id="tabs-5" role="tabpanel" aria-labelledby="tab-5-tab">
+				 
+                
+              
+				<table class="stripedTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="0" class="story">
+            <tr>
+              <td valign="top" class="story">РК50-3-35</td>
+              <td valign="top" class="story">Антенный кабель для  ГЛОНАСС/GPS 50м.</td>
+            </tr>
+            <tr>
+              <td valign="top"  class="story">РК50-7-311</td>
+              <td valign="top"  class="story">Антенный кабель для  ГЛОНАСС/GPS 50м/100/150м<br>
+                (-70&deg;C до +85&deg;C).</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">РК50-3-35 </td>
+              <td valign="top" class="story">Антенный кабель для GPS 50м./100м./150м./200м./300м.</td>
+            </tr>
+            <tr>
+              <td valign="top"  class="story"> N-722Q</td>
+              <td valign="top"  class="story">Грозоразрядник для  антенны GPS.</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS Радиус-50</td>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS со встроенной грозозащитой. (-45…65 С)</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">GPSGL-TMG-SPI-40NCB</td>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS (-40°C до +85°C).</td>
+            </tr>
+            <tr>
+              <td valign="top" class="story">BG3-A-XN-1-UPM с креплением Antcom MTR-2</td>
+              <td valign="top" class="story">Антенна ГЛОНАСС/GPS (-70°C до +85°C).</td>
+            </tr>
+              </table>
+              
+				
+                 </div>
+                 </div>
+				<!-- InstanceBeginEditable name="NewTabsLevel3" -->Editregion <!-- InstanceEndEditable -->
+                </div>
+            
+                
+                 
+
+            </div>
+        </div>
+		
+        <div class="row row-eq-height" style="padding-top:20px; background-color:white">
+
+            <div class="col-lg-4" style="background-color:white; vertical-align:central">
+                <img src="../images/ptime_barcode.gif" /></div>
+            <div class="col-lg-4" style="background-color:white; vertical-align:central; text-align:center">
+                <span><a href="../contacts.html">карта проезда</a> | <a href="../index.html">точное время </a>|<a href="../index.html"> о компании</a></span>
+            </div>
+            <div class="col-lg-4" style="background-color:white; text-align:right">
+                <div class="pull-right">
+                    ООО "Прайм Тайм"<br>
+                    127322, Москва, ул. Яблочкова д.21, корп. 3, 3 этаж<br>
+                    Телефон/Факс: +7(495) 616-10-00
+                </div>
+            </div>
+        </div>
+    
+    </div>
+	</div>
+    </div>
+   
+
+</body>
+<!-- InstanceEnd --></html>
+
