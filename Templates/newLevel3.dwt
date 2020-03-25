@@ -36,9 +36,9 @@
 </head>
 
 <body >
-<div class="container" style="padding:0px; max-width:1200px">
+<div class="container" style="padding:0px; max-width:1200px; width: 100%">
 <div class="row justify-content-center">
-	 <div id="mainBlocElem" class="center-block" style="background-color:white; padding:0px; max-width:1200px">
+	 <div id="mainBlocElem" class="center-block" style="background-color:white; padding:0px; max-width:1200px; width: 100%">
 
         <div class="row" style="background-color:white; padding:0px">
 
